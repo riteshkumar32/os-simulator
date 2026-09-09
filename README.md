@@ -1,58 +1,93 @@
-# OS-simulator-toolkit(link:-https://youtu.be/vLF3_7F5gY8)
-This is a C++-based OS simulator that visualizes core operating system concepts. It offers a menu-driven console interface to explore CPU scheduling, memory management, page replacement, disk scheduling, deadlock detection, and thread synchronization.
-Project Description
-SchedulinAlgozzz is a comprehensive Operating System (OS) Simulator built in C++, designed to demonstrate and visualize core OS concepts through interactive modules. It offers students and learners hands-on experience with various OS algorithms and synchronization mechanisms via a dynamic console interface.
+# OS Simulator
 
-The simulator provides a menu-driven system that allows users to choose and execute multiple real-world OS algorithms such as CPU Scheduling, Memory Management, Page Replacement, Disk Scheduling, Deadlock Detection, and Thread Synchronization.
+A C++ based Operating System Simulator that demonstrates and implements fundamental Operating System concepts.
 
-🎯 Key Features
-🔄 CPU Scheduling Algorithms
-Simulate FCFS, SJF, Round Robin, and Priority Scheduling with turnaround time and Gantt charts.
+## Features
 
-💾 Memory Management
-Supports First Fit, Best Fit, and Worst Fit allocation strategies with fragmentation reports.
+- CPU Scheduling
+- Deadlock Detection
+- Disk Scheduling
+- Dynamic Semaphore
+- Memory Management
+- Page Replacement
 
-📄 Page Replacement Algorithms
-Demonstrate FIFO, LRU, and Optimal page replacement using dynamic page/frame input.
+## Project Structure
 
-🌀 Disk Scheduling Algorithms
-Includes FCFS, SCAN, C-SCAN with real-time head movement simulation and seek time calculation.
+    os/
+    ├── CPU_TEST.cpp
+    ├── CPU_TEST.h
+    ├── deadlock_detection.cpp
+    ├── deadlock_detection.h
+    ├── disk_scheduling.cpp
+    ├── disk_scheduling.h
+    ├── dynamic_semaphore.cpp
+    ├── dynamic_semaphore.h
+    ├── memory_management.cpp
+    ├── memory_management.h
+    ├── page_replacement.cpp
+    ├── page_replacement.h
+    ├── main.cpp
+    ├── README.md
+    └── .gitignore
 
-🧠 Deadlock Detection (Banker's Algorithm)
-Simulate safe/unsafe states with dynamic process/resource matrix input.
+## Technologies Used
 
-🔐 Dynamic Semaphore Module
-Solve classical synchronization problems like:
+- C++
+- Standard C++ Libraries
+- Operating System Concepts
 
-Producer-Consumer Problem
+## Concepts Implemented
 
-Dining Philosophers Problem
-Uses mutexes, condition variables, and threads to simulate multithreading challenges.
+### CPU Scheduling
 
-📋 User-Friendly CLI Interface
-Dynamic inputs, colored output, buffer visualization, and logs where applicable.
+Implements CPU scheduling algorithms to demonstrate how processes are selected and executed by the CPU.
 
-🧩 Modular Design
-Each algorithm is separated into its own file and executable, allowing for clean development and testing.
+### Deadlock Detection
 
-🛠️ Technologies Used
-Language: C++17
+Simulates deadlock detection between processes and resources.
 
-Concurrency: std::thread, std::mutex, std::condition_variable, std::atomic
+### Disk Scheduling
 
-Compilation: g++ (GCC)
+Implements disk scheduling algorithms to determine the order in which disk requests are serviced.
 
-Platform: Windows 10 / Linux Terminal
+### Dynamic Semaphore
 
-Optional Frontend: Console-based UI
+Demonstrates process synchronization and resource management using semaphores.
 
-📚 Learning Outcomes
-By using SchedulinAlgozzz, users will gain:
+### Memory Management
 
-Practical understanding of how core OS algorithms function.
+Implements fundamental memory allocation and management concepts.
 
-Hands-on experience with multithreaded synchronization.
+### Page Replacement
 
-Insights into resource allocation, CPU utilization, and memory fragmentation.
+Simulates page replacement algorithms used in virtual memory management.
 
-Experience with modular programming, thread-safe design, and performance visualization.
+## How to Run
+
+Clone the repository:
+
+    git clone https://github.com/riteshkumar32/os-simulator.git
+
+    cd os-simulator
+
+Compile the project:
+
+    g++ main.cpp CPU_TEST.cpp deadlock_detection.cpp disk_scheduling.cpp dynamic_semaphore.cpp memory_management.cpp page_replacement.cpp -o os_simulator
+
+Run the program on Windows:
+
+    os_simulator.exe
+
+Run the program on Linux/macOS:
+
+    ./os_simulator
+
+## Purpose
+
+This project provides practical implementations of fundamental Operating System concepts and demonstrates how different OS mechanisms work through simulation.
+
+## Author
+
+Ritesh Kumar
+
+GitHub: https://github.com/riteshkumar32

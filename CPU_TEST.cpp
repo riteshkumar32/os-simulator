@@ -1,7 +1,7 @@
 /******************************************************************************
 
                         CPU Scheduling Algorithms Calculator
-                                [SchedulinAlgozzz]
+                           
                Calculation of Completion Time, Turn Around Time, Waiting Time
 
 *******************************************************************************/
